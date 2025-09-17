@@ -54,15 +54,15 @@ function Signup() {
           <label htmlFor="company" className='absolute bg-blue-50 -top-2 left-3 text-violet-600 text-sm pl-1 pr-6 font-semibold'>Company Name</label>
           <input type="text" name='company' placeholder="enter company name..." required className="py-3 px-4 border w-full border-gray-400 rounded-lg outline-none bg-blue-50 text-gray-700 font-semibold placeholder:font-normal placeholder:text-sm" />
         </div>
-        <div className='flex flex-col items-start justify-start space-y-1'>
+        <div className='flex flex-col items-start justify-start space-y-2'>
           <label htmlFor="agency" className='text-gray-800 text-sm font-semibold'>Are you an Agency<span className='text-red-50-500'>*</span></label>
           <div className='flex items-center justify-center space-x-3 text-sm text-gray-800 font-semibold'>
             <div className='flex items-center justify-center space-x-3'>
-              <input type="radio" name="agency" value="yes" />
+              <input type="radio" name="agency" value="yes" className='accent-violet-500 size-5' />
               <label htmlFor="agency-yes">Yes</label>
             </div>
             <div className='flex items-center justify-center space-x-3'>
-              <input type="radio" name="agency" value="no" />
+              <input type="radio" name="agency" value="no" className='accent-violet-500 size-5' />
               <label htmlFor="agency-no">No</label>
             </div>
           </div>
