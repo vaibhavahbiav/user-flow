@@ -139,10 +139,12 @@ function Settings() {
 function App() {
   return (
     <HashRouter>
-      <Route path="/" element={<Splash />} />
-      <Route path="/signup" element={<Signup />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/settings" element={<Settings />} />
+      <Routes>
+        <Route path="/" element={<Splash />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/settings" element={<Settings />} />
+      </Routes>
     </HashRouter>
   );
 };
