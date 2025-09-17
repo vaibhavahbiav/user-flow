@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useNavigate, BrowserRouter, HashRouter } from 'react-router-dom';
+import { Routes, Route, useNavigate, HashRouter } from 'react-router-dom';
 
 function Splash() {
   const navigate = useNavigate();
@@ -139,12 +139,10 @@ function Settings() {
 function App() {
   return (
     <HashRouter>
-      <Routes>
-        <Route path="/" element={<Splash />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/settings" element={<Settings />} />
-      </Routes>
+      <Route path="/" element={<Splash />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/settings" element={<Settings />} />
     </HashRouter>
   );
 };
